@@ -77,27 +77,55 @@ You observe one random draw from this process: the chosen sheet's face-up side s
 Naturally, you are still uncertain about the color of the \textbf{face-down} side of the chosen sheet.
 }
 
+\subsubsection*{Probabilistic model}
+Let $\boldsymbol{S}$
+ be the random variable indicating which sheet is chosen. It is a discrete r.v. with 3 possible values:
+
+\begin{itemize}
+    \item BB : blue/blue sheet
+    \item BO : blue/orange sheet
+    \item OO : orange/orange sheet
+\end{itemize}
+
+
+Let $\boldsymbol{U}$
+ be the random variable indicating which color is observed on the face-up side. This discrete r.v. has 2 possible values:
+\begin{itemize}
+    \item b : for blue
+    \item o : for orange
+\end{itemize}
+
+
 \officialdirections{
 \subsection*{1a: Problem Statement}
-Formalize this problem by defining all relevant random variables. For each variable, clearly define the possible values.
-}
-\subsection{1a: Solution}
-
-TODO YOUR SOLUTION HERE
-
-\officialdirections{
-\subsection*{1b: Problem Statement}
 Compute the joint probability table for all possible configurations of your two random variables.
 
 Write your answers as a 3x2 table (rows should match to sheets, columns should match to face-up colors).
 }
 
-\subsection{1b: Solution}
+\subsection{1a: Solution}
 
 TODO YOUR SOLUTION HERE
+\begin{center}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Row/Column} & \textbf{Column 1} & \textbf{Column 2} \\
+        \hline
+        \textbf{Row 1} & Data 1,1 & Data 1,2 \\
+        \hline
+        \textbf{Row 2} & Data 2,1 & Data 2,2 \\
+        \hline
+        \textbf{Row 3} & Data 3,1 & Data 3,2 \\
+        \hline
+    \end{tabular}
+\end{center}
 
 \officialdirections{
 \subsection*{1c: Prompt}
+You observe one random draw from this process: the chosen sheet's face-up side is blue.
+
+Naturally, you are still uncertain about the color of the face-down side of the chosen sheet.
+
 What is the probability that the face-down side of the chosen sheet is orange?
 }
 \subsection{1c: Solution}
@@ -111,16 +139,16 @@ Consider a joint model of 3 random variables:
 
 \begin{itemize}
 \item $H$ : a discrete r.v. with K possible values
-\item $E_1$: a discrete r.v. with observed value $e_1$
-\item $E_2$: a discrete r.v. with observed value $e_2$
+\item $E_1$: a discrete r.v.  with A possible values
+\item $E_2$: a discrete r.v. with B possible values
 \end{itemize}
 
 Imagine three possible sets of PMFs we could know completely:
 
 \begin{itemize}
-\item (i) $p(H)$, $p(e_1, e_2)$, $p(e_1|H), p(e_2|H)$
-\item (ii) $p(H)$, $p(e_1, e_2)$, $p(e_1, e_2|H)$
-\item (iii) $p(H)$, $p(e_1|H), p(e_2|H)$
+\item (i) $p(H)$, $p(E_1, E_2)$, $p(E_1|H), p(E_2|H)$
+\item (ii) $p(H)$, $p(E_1, E_2)$, $p(E_1, E_2|H)$
+\item (iii) $p(H)$, $p(E_1|H), p(E_2|H)$
 \end{itemize}
 }
 
@@ -128,7 +156,7 @@ Imagine three possible sets of PMFs we could know completely:
 \subsection*{2a: Problem Statement}
 Consider any joint distribution over $H, E_1, E_2$.
 
-For each set of PMFs above (i) - (iii), do we have enough information to calculate $p(H | e_1, e_2)$ ? Provide 1-2 sentences of justification.
+Suppose we only know the PMFs listed in each scenario (i) - (iii) above. Do we have enough information to calculate $p(H | E_1, E_2)$ ? Provide 1-2 sentences of justification.
 }
 
 \subsection{2a: Solution}
@@ -138,10 +166,35 @@ TODO YOUR SOLUTION HERE
 \subsection*{2b: Problem Statement}
 Now suppose $E_1$ and $E_2$ are \textbf{conditionally independent} given $H$.
 
-For each set of PMFs above (i) - (iii), does this additional assumption allow us to calculate $p(H | e_1, e_2)$ ? Provide 1-2 sentences of justification.
+For each set of PMFs above (i) - (iii), does this additional assumption allow us to calculate $p(H | E_1, E_2)$ ? Provide 1-2 sentences of justification.
 }
 
 \subsection{2b: Solution}
+TODO YOUR SOLUTION HERE
+
+\officialdirections{
+\subsection*{Problem 3}
+
+Consider rolling $N$
+ dice. Each is a standard 6-sided die, with each side showing a distinct number in the set $\{1,2,3,4,5,6\}$. Each die can be modeled as independent and identically distributed with uniform chance for each of the sides.
+You play a game where you get the following points for the outcome of each die:
+\begin{itemize}
+\item 1000 if you see a 1
+\item 500 if you see a 5
+\item 0 otherwise
+\end{itemize}
+Your total score is the sum of the points from each individual die.
+}
+
+
+\officialdirections{
+\subsection*{3a: Problem Statement}
+What is the expected total score when using all $N$
+ dice? Write your answer as a function of $N$
+. Show your work.
+}
+
+\subsection{3a: Solution}
 TODO YOUR SOLUTION HERE
 
 

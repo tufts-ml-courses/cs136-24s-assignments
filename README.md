@@ -1,3 +1,4 @@
-# HW0
+# Links to HW
 
-See instructions here: https://www.cs.tufts.edu/cs/136/2023s/hw0.html
+* HW0 : <https://www.cs.tufts.edu/cs/136/2024s/hw0.html>
+* HW1 : <https://www.cs.tufts.edu/cs/136/2024s/hw1.html>

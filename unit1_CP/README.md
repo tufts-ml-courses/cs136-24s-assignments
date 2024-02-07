@@ -1,4 +1,4 @@
-# CP1 - Unigram Probabilities
+# CP1 - Probabilistic Prediction of Words
 
 Instructions for this assignment are here:
 

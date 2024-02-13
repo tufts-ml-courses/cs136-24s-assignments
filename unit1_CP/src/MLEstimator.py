@@ -16,12 +16,12 @@ Examples
 >>> mle.fit(word_list[:-1]) # all but last word
 >>> mle.predict_proba('dinosaur')       # won't pass with starter code
 0.45
->>> mle.predict_proba('known_unseen')   # won't pass with starter code
+>>> mle.predict_proba('knownunseen')   # won't pass with starter code
 0.1
->>> mle.predict_proba('UNKNOWN_unseen') # won't pass with starter code
+>>> mle.predict_proba('unknownunseen') # won't pass with starter code
 Traceback (most recent call last):
 ...
-KeyError: 'Word UNKNOWN_unseen not in the vocabulary'
+KeyError: 'Word unknownunseen not in the vocabulary'
 
 
 Resources

@@ -130,15 +130,18 @@ TODO YOUR SOLUTION HERE
 
 \officialdirections{
 \subsection*{3c: Problem Statement}
-Finally, combine your result from **3b** defining $S_{N+1}$ with
 
-$\sigma^2_{N+1}(x_*) - \sigma^2_{N}(x_*) = \phi(x_*)^T \left[ S_{N+1} - S_{N} \right] \phi(x_*)$ 
+Finally, combine your result from 3b with the following two facts
 
-and the fact that $S_N$ must be positive definite, to show that:
+\begin{itemize}
+    \item (i) $\sigma^2_{N+1}(x_*) - \sigma^2_{N}(x_*) = \phi(x_*)^T \left[ S_{N+1} - S_{N} \right] \phi(x_*)$
+    \item (ii) $S_N$ must be positive definite
+\end{itemize}
+
+to show that
 \begin{align}
 \sigma_{N+1}^2(x_*) \leq \sigma_N^2(x_*)
 \end{align}
-This would prove that the predictive variance *cannot increase* with each additional data point. In other words, we will never be "less certain" about a prediction we make if we gather more data.
 }
 
 

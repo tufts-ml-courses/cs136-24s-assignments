@@ -1,0 +1,135 @@
+\documentclass[10pt]{article}
+
+%%% Doc layout
+\usepackage{fullpage} 
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{graphicx}       % figure graphics
+\usepackage{microtype}      % microtypography
+\usepackage{parskip}
+\usepackage{times}
+
+
+%% Hyperlinks always black, no weird boxes
+\usepackage[hyphens]{url}
+\usepackage[colorlinks=true,allcolors=black,pdfborder={0 0 0}]{hyperref}
+
+%%% Math typesetting
+\usepackage{amsmath,amssymb}
+
+%%% Write out problem statements in purple, solutions in black
+\usepackage{xcolor}
+\newcommand{\officialdirections}[1]{{\color{purple} #1}}
+
+%%% Avoid automatic section numbers (we'll provide our own)
+\setcounter{secnumdepth}{0}
+
+
+%% --------------
+%% Header
+%% --------------
+\usepackage{fancyhdr}
+\setlength{\headheight}{12.0pt}
+\fancyhf{}
+\fancyhead[C]{\ifnum\value{page}=1 CS 136 - 2024s - Coding Practical for Unit 2 (CP2) \else \fi}
+\fancyfoot[C]{\thepage} % page number
+\renewcommand\headrulewidth{0pt}
+\pagestyle{fancy}
+
+
+%% --------------
+%% Begin Document
+%% --------------
+\begin{document}
+
+~~\\ %% add vertical space
+
+{\Large{\bf CP2 Report }}
+
+\Large{\bf Collaboration Statement:}
+
+TODO
+
+Total hours spent: TODO
+
+~~\\
+~~\\
+Links: 
+\href{https://www.cs.tufts.edu/cs/136/2024s/cp2.html}{[CP2 instructions]} 
+\href{https://www.cs.tufts.edu/cs/136/2024s/index.html#collaboration}{[Course collaboration policy]} 
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+
+\newpage
+
+\subsection{1a}
+\officialdirections{
+Given a dataset of size $N$, how do we score the model's predictions? Translate the provided starter code for the score function of the MAP estimator into a mathematical expression involving our probabilistic model. Provide a function in terms of parameters $w_\text{MAP}, \beta$ and dataset ${x_n,t_n}_{n=1}^N$.}
+
+1a: Solution
+TODO YOUR SOLUTION HERE
+
+\subsection{1b}
+\officialdirections{Explain why different $\beta$ values might be preferred by different model orders when using MAP. (Hint: Execute run\_demo\_MAP.py at 3 different $\beta$ values: \{0.1, 1, 10\}. Look at the MAP estimator's scores on the training-set to see which $\beta$ is preferred by which order. Then study the provided visualization to get intuition about why.).}
+
+1b: Solution
+TODO YOUR SOLUTION HERE
+
+\subsection{1c:}
+\officialdirections{Compare the visuals produced by run\_demo\_PPE.py to those from the MAP estimator. What do you notice about the width of the 2-stddev intervals of the predictions at $x$ values far from the train data? Why does this suggest PPE might generalize better than MAP?}
+
+1c Solution:
+TODO YOUR SOLUTION HERE
+\newpage 
+
+\subsection{2a: }
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\thefigure}{2a}
+ \begin{figure}[!h]
+     \centering
+     \includegraphics[width=0.95\textwidth]{example-image-a.pdf}
+     \label{fig:2a}
+\caption{TODO YOUR CAPTION HERE. 
+}%endcaption
+ \end{figure}
+
+\newpage 
+
+\subsection{2b}
+\renewcommand{\thefigure}{2b}
+ \begin{figure}[!h]
+     \centering
+     \includegraphics[width=0.6\textwidth]{example-image-b.pdf}
+     \label{fig:2b}
+\caption{
+TODO YOUR CAPTION HERE
+}%endcaption
+ \end{figure}
+
+\newpage 
+
+\subsection{3a}
+\renewcommand{\thefigure}{3a}
+ \begin{figure}[!h]
+     \centering
+     \includegraphics[width=0.95\textwidth]{example-image-c.pdf}
+     \label{fig:3a}
+     \caption{
+TODO YOUR CAPTION HERE
+}%endcaption
+ \end{figure}
+
+\newpage 
+
+\subsection{3b}
+\renewcommand{\thefigure}{3b}
+ \begin{figure}[!h]
+     \centering
+     \includegraphics[width=0.6\textwidth]{example-image-c.pdf}
+     \label{fig:3b}
+\caption{
+TODO YOUR CAPTION HERE
+}%endcaption
+ \end{figure}
+ 
+\end{document}

@@ -1,0 +1,116 @@
+\documentclass[10pt]{article}
+
+%%% Doc layout
+\usepackage{fullpage} 
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{graphicx}       % figure graphics
+\usepackage{microtype}      % microtypography
+\usepackage{parskip}
+\usepackage{times}
+
+
+%% Hyperlinks always black, no weird boxes
+\usepackage[hyphens]{url}
+\usepackage[colorlinks=true,allcolors=black,pdfborder={0 0 0}]{hyperref}
+
+%%% Math typesetting
+\usepackage{amsmath,amssymb}
+
+%%% Write out problem statements in purple, solutions in black
+\usepackage{xcolor}
+\newcommand{\officialdirections}[1]{{\color{purple} #1}}
+
+%%% Avoid automatic section numbers (we'll provide our own)
+\setcounter{secnumdepth}{0}
+
+
+%% --------------
+%% Header
+%% --------------
+\usepackage{fancyhdr}
+\setlength{\headheight}{12.0pt}
+\fancyhf{}
+\fancyhead[C]{\ifnum\value{page}=1 CS 136 - 2024s - Coding Practical for Unit 3 (CP3) \else \fi}
+\fancyfoot[C]{\thepage} % page number
+\renewcommand\headrulewidth{0pt}
+\pagestyle{fancy}
+
+
+%% --------------
+%% Begin Document
+%% --------------
+\begin{document}
+
+~~\\ %% add vertical space
+
+{\Large{\bf CP3 Report }}
+
+\Large{\bf Collaboration Statement:}
+
+TODO
+
+Total hours spent: TODO
+
+~~\\
+~~\\
+Links: 
+\href{https://www.cs.tufts.edu/cs/136/2024s/cp3.html}{[CP3 instructions]} 
+\href{https://www.cs.tufts.edu/cs/136/2024s/index.html#collaboration}{[Course collaboration policy]} 
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+
+\newpage
+
+\subsection{1a}
+
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\thefigure}{1a}
+ \begin{figure}[!h]
+     \centering
+     \includegraphics[width=0.95\textwidth]{example-image-a.pdf}
+     \label{fig:1a}
+\caption{
+TODO your caption
+}%endcaption
+ \end{figure}
+
+\subsection{1b}
+\officialdirections{
+    Suppose for a different problem (a different target distribution) you implement a RandomWalk sampler.
+    You find that setting rw\_stddev=100.0 yields an acceptance rate of around 0.8 after running 1 chain for 10,000 samples. Should you be confident your MCMC chain has converged? Justify your answer.}
+
+TODO your answer
+
+\newpage
+
+\subsection{2a}
+
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\thefigure}{2a}
+\begin{figure}[!h]
+     \centering
+     \includegraphics[width=0.6\textwidth]{example-image-a.pdf}
+     \label{fig:2a}
+\caption{
+TODO your caption
+}%endcaption
+ \end{figure}
+ 
+\subsection{2b}
+\officialdirections{
+    Report the per-example score of models with order 0 and order 2 on the provided test set.}
+
+TODO your answer
+
+\newpage
+
+\subsection{2c}
+\officialdirections{
+    Provide your implementation of calc\_score as a Python function in your report.}
+
+\begin{verbatim}
+TODO your code goes here
+\end{verbatim}
+
+\end{document}

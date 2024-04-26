@@ -319,7 +319,7 @@ class GMM_PenalizedMLEstimator_EM(GMM_PenalizedMLEstimator):
             if x_valid_ND is None:
                 va_score_message = ""
             else:
-                # TODO compute the per-pixel negative log likelihood on validation set
+                # TODO compute the per-pixel log likelihood on validation set
                 va_score_per_pixel = 0.0123 + self.seed / 10000.0 # FIXME
                 self.history['valid_score_per_pixel'].append(va_score_per_pixel)
                 va_score_message = "| valid score %9.6f" % (self.history['valid_score_per_pixel'][-1])
